@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Students, Board, Standard, Medium, Address
-from .utils import create_student
+from studentsdata.services.commands import create_student
 
 # Here Address Serializer
 class AddressSerializer(serializers.Serializer):
